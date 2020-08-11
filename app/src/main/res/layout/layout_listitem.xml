@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    android:id="@+id/itemLayout"
+    >
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal_background" />
+
+    <TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/textview"
+    android:layout_toEndOf="@id/image"
+    android:textColor="#000"
+    android:layout_centerVertical="true"
+    android:layout_marginStart="15dp"
+    android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:layout_toEndOf="@id/name"
+        android:textColor="#000"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_alignBottom="@id/image"
+    android:background="@android:color/black" />
+
+</RelativeLayout>

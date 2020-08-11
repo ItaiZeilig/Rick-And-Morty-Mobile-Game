@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebackground3"
+    android:id="@+id/gameLayout"
+    tools:context=".GameActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/blockLayout">
+
+
+
+    </RelativeLayout>
+
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:useDefaultMargins="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/heart1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:contentDescription="@string/life"
+                app:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/heart2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/life"
+                app:srcCompat="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/heart3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/life"
+                app:srcCompat="@drawable/heart" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/pointsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:gravity="center"
+            android:textColor="@color/silver"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/player"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/rickandmortyship"
+        android:contentDescription="@string/player" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/tap_to_start" />
+
+</RelativeLayout>
